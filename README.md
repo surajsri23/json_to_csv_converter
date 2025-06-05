@@ -12,7 +12,7 @@ A simple and interactive web application built with Flask that allows users to c
 
 ## Screenshots
 
-![Screenshot](screenshot.png) <!-- Add your screenshot here if available -->
+![Screenshot](Screenshot.png) <!-- Add your screenshot here if available -->
 
 ## Getting Started
 
