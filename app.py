@@ -2,6 +2,10 @@ from flask import Flask, render_template_string, request, send_file
 import json
 import csv
 import io
+<<<<<<< HEAD
+=======
+import os
+>>>>>>> fd37fe9 (Initial commit: JSON <-> CSV Converter with Flask UI)
 
 app = Flask(__name__)
 
@@ -172,4 +176,9 @@ def download_result():
     )
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+>>>>>>> fd37fe9 (Initial commit: JSON <-> CSV Converter with Flask UI)
