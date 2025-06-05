@@ -71,11 +71,3 @@ This project is licensed under the MIT License.
 
 ---
 
-> **Note:**  
-> To upload this project to your GitHub repository, use the following commands:
-
-```sh
-git add .
-git commit -m "Initial commit: JSON <-> CSV Converter with Flask UI"
-git push origin main
-```
