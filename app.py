@@ -2,10 +2,7 @@ from flask import Flask, render_template_string, request, send_file
 import json
 import csv
 import io
-<<<<<<< HEAD
-=======
 import os
->>>>>>> fd37fe9 (Initial commit: JSON <-> CSV Converter with Flask UI)
 
 app = Flask(__name__)
 
@@ -101,7 +98,6 @@ def index():
         data = None
 
         if mode == 'json2csv':
-            # JSON to CSV
             if file and file.filename.endswith('.json'):
                 try:
                     data = json.load(file)
@@ -131,7 +127,6 @@ def index():
                 except Exception as e:
                     error = f"Error converting to CSV: {str(e)}"
         else:
-            # CSV to JSON
             if file and file.filename.endswith('.csv'):
                 try:
                     csv_content = file.read().decode('utf-8')
@@ -176,9 +171,5 @@ def download_result():
     )
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-    app.run(debug=True)
-=======
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
->>>>>>> fd37fe9 (Initial commit: JSON <-> CSV Converter with Flask UI)
